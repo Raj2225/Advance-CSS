@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        :root{
+            --bkground:darkgrey;
+            /*cssvariable must start wit "--" */
+            --frground: black;
+
+        }
+        body {
+          background-color: var(--bkground);
+        }
+        
+        h1 {
+            color: var(--frground);
+          border-bottom: var(--frground);
+        }
+        
+      
+        
+        .btn {
+          background-color: var(--frground);
+          color: var(--bkground);
+          border: var(--frground);          
+        }
+
+        .lbl{
+            color: var(--frground);
+        }
+
+        .txt{
+            background-color: var(--frground);
+            color: white;
+        }
+        </style>
+        
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="3">
+                <h1>Please Provide your Information </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="lbl" >Name</td>
+            <td class="lbl">:</td>
+            <td><input type="text" class="txt" ></td>            
+        </tr>
+        <tr>
+            <td class="lbl">Surname</td>
+            <td class="lbl">:</td>
+            <td><input type="text" class="txt"></td>            
+        </tr>
+        <tr>            
+            <td colspan="3"> <input type="button" value="Submit" class="btn"></td>            
+        </tr>
+    </table>
+    
+</body>
+</html>
